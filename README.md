@@ -1,2 +1,2 @@
 # 47300-final-project \
-Alex
+Jia Peng Zhen (Alex)
