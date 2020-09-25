@@ -1,0 +1,24 @@
+{
+  "name": "47300-final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSC47300-PROJECT/47300-final-project.git"
+  },
+  "author": "Yifeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSC47300-PROJECT/47300-final-project/issues"
+  },
+  "homepage": "https://github.com/CSC47300-PROJECT/47300-final-project#readme",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
