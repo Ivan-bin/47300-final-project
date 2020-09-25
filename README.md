@@ -1,2 +1,6 @@
-# 47300-Web Design-final-project
+# 47300-final-project 
+#### Jiande Li
+#### Yifeng Jin
+#### Haibin Mai
+
 # Installation: npm install
