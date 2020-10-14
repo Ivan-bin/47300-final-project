@@ -16,8 +16,13 @@ const app = express();
 // models - User
 const User = require('./models/user')
 
+// LocalStrategy
+const LocalStrategy = require('passport-local').Strategy;
+passport.use(new LocalStrategy(User.authenticate()));
+
 // require router.js
 const router = require('./router')
+const user = require('./user')
 
 // art-template engine
 app.engine('html', require('express-art-template'))
@@ -34,11 +39,21 @@ app.use('/node_modules/', express.static(__dirname + '/node_modules'))
 
 app.use(cors());
 
+// initialize the passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.serializeUser(User.serializeUser()); 
+passport.deserializeUser(User.deserializeUser()); 
+
+
 // flash message
 // app.use(flash());
 
 // calling router.js
 app.use(router)
+app.use(user)
+
 
 
 app.listen(5000, (req, res) => {
